@@ -1,0 +1,72 @@
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg,#5f9cff,#7ed6df);
+  min-height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* center container */
+.app{
+  width:100%;
+  display:flex;
+  justify-content:center;
+}
+.taken {
+  background-color: #d4edda;
+  border-left: 6px solid green;
+}
+/* card */
+.card{
+  width:420px;
+  background:white;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* title */
+.card h1{
+  text-align:center;
+  margin-bottom:25px;
+}
+
+/* form layout */
+.form-group{
+  display:flex;
+  flex-direction:column;
+  margin-bottom:15px;
+}
+
+.form-group label{
+  font-weight:600;
+  margin-bottom:5px;
+}
+
+.form-group input,
+.form-group select{
+  padding:10px;
+  border-radius:6px;
+  border:1px solid #ccc;
+  width:100%;
+}
+
+/* button */
+.add-btn{
+  width:100%;
+  margin-top:10px;
+  padding:12px;
+  border:none;
+  background:#698ebd;
+  color:white;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:16px;
+}
+
+.add-btn:hover{
+  background:#1c5ec9;
+}
