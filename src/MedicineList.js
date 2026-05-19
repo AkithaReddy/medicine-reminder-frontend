@@ -8,7 +8,7 @@ function MedicineList() {
 
   const [medicines, setMedicines] = useState([]);
 
-  const API = "http://localhost:8080/medicines";
+  const API = "https://medicine-reminder-backend-inuf.onrender.com/medicines";
 
   const triggered = useRef({});
 
