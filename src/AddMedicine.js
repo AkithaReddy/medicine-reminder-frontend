@@ -13,12 +13,14 @@ function AddMedicine() {
 
   const addMedicine = async () => {
 
-    if (!name || !dosage || !frequency || !time) {
-      alert("Fill all fields");
-      return;
-    }
+  if (!name || !dosage || !frequency || !time) {
+    alert("Fill all fields");
+    return;
+  }
 
-    await fetch(API, {
+  try {
+
+    const response = await fetch(API, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -31,11 +33,24 @@ function AddMedicine() {
       })
     });
 
-    // correct page
+    if (!response.ok) {
+      throw new Error("Failed to add medicine");
+    }
+
+    alert("Medicine added successfully");
+
     navigate("/list");
 
-  };
+  } catch (error) {
 
+    console.error(error);
+
+    alert("Backend is waking up. Try again in few seconds.");
+
+  }
+
+};
+   
   return (
 
     <div className="app">
