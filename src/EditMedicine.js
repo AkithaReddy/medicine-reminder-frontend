@@ -11,7 +11,7 @@ function EditMedicine() {
   const [frequency, setFrequency] = useState("");
   const [time, setTime] = useState("");
 
-  const API = "https://medicine-reminder-backend-inuf.onrender.com/medicines";
+  const API = "https://medicine-reminder-backend-xuon.onrender.com/medicines";
 
   useEffect(() => {
 

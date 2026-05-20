@@ -9,7 +9,7 @@ function AddMedicine() {
   const [time, setTime] = useState("");
 
   const navigate = useNavigate();
-  const API = "https://medicine-reminder-backend-inuf.onrender.com/medicines";
+  const API = "https://medicine-reminder-backend-xuon.onrender.com/medicines";
 
   const addMedicine = async () => {
 
